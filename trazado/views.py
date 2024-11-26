@@ -1,7 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
-
 
 # Función para convertir dirección a coordenadas usando Google Maps API
 def get_coordinates(address):
@@ -15,6 +13,7 @@ def get_coordinates(address):
     else:
         return None, None
 
+
 # Función para obtener datos de clima usando una API de clima
 def get_climate_data(lat, lng):
     # Aquí puedes usar una API de clima como OpenWeatherMap
@@ -23,6 +22,7 @@ def get_climate_data(lat, lng):
     response = requests.get(url, params=params)
     data = response.json()
     return data
+
 
 # Función para obtener datos de producción de café
 def get_coffee_production_data(lat, lng):
