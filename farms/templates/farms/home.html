@@ -1,0 +1,47 @@
+{% extends "farms/layout.html" %}
+{% load static %}
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+
+    <div class="flag">
+        <img src="static/img/img/bandera.jpeg" alt="Bandera de Colombia">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Sobre Coffee Connection</a>
+                <div class="dropdown-content">
+                    <a href="#">Historia</a>
+                    <a href="#">Equipo</a>
+                    <a href="#">Contacto</a>
+                </div>
+            </li>
+            <li><a href="#">Productor</a></li>
+            <li><a href="#">Comprador</a></li>
+            <li><a href="#">Información Café</a></li>
+            <li><a href="#">Visión y Misión</a></li>
+        </ul>
+    </nav>
+
+    <section class="vision-mission">
+        <h1>Visión</h1>
+        <p><em>Conectados</em> aspira a ser el referente líder en la innovación tecnológica y la sostenibilidad, promoviendo un futuro donde la tecnología y la conectividad estén al servicio del desarrollo humano y el bienestar social. Nos imaginamos un mundo en el que cada comunidad, cada negocio y cada individuo esté empoderado para alcanzar su máximo potencial a través de soluciones tecnológicas avanzadas y accesibles.</p>
+        <h1>Misión</h1>
+        <p>En <em>Conectados</em>, nuestra misión es transformar la forma en que las personas y las organizaciones interactúan con la tecnología, creando un impacto positivo en sus vidas diarias. Comprometidos con el lema <strong>"Construyendo el futuro hoy"</strong>, nos dedicamos a:</p>
+        <ul>
+            <li><em>Innovar Constantemente</em>: Desarrollar y proporcionar soluciones tecnológicas de vanguardia que respondan a las necesidades cambiantes de nuestra sociedad.</li>
+            <li><em>Fomentar la Inclusión Digital</em>: Asegurar que la tecnología sea accesible para todos, reduciendo la brecha digital y creando oportunidades equitativas.</li>
+            <li><em>Sostenibilidad</em>: Integrar prácticas sostenibles en todas nuestras operaciones, promoviendo el uso responsable de los recursos y la protección del medio ambiente.</li>
+            <li><em>Colaboración y Comunidad</em>: Fortalecer la colaboración con socios estratégicos y comunidades, construyendo redes de apoyo que impulsen el crecimiento y la innovación compartida.</li>
+        </ul>
+    </section>
+    <section class="database">
+        <h2>Base de Datos Administrada</h2>
+        <p>Esta sección describe la base de datos que se utiliza para administrar la información del cultivo, procesamiento y empaque del café especial.</p>
+        <img src="database_image.png" alt="Imagen de la base de datos">
+    </section>
+
+{% endblock %}

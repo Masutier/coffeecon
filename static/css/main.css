@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Color de fondo tono café claro */
+    color: #4b2e2e; /* Color de texto tono café oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #8b4513; /* Color de fondo tono café */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flag img {
+    height: 50px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #8b4513;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #4b2e2e;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+.vision-mission {
+    margin-bottom: 20px;
+}
+
+.vision-mission h1 {
+    color: #8b4513; /* Color de texto tono café */
+}
+
+.database {
+    margin-top: 20px;
+}
+
+.database img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
